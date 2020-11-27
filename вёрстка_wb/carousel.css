@@ -1,0 +1,119 @@
+.carousel {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.carousel .gallery img {
+    width: 1450px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+div.arrow {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    padding: 0;
+    border-radius: 50%;
+    border: 0px;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 15px 7px 15px 7px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    text-align: center;
+    align-items: flex-start;
+    opacity: .5;
+}
+.arrow img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height: 20px;
+}
+.arrow:focus {
+    outline: none;
+}
+
+
+.prev{
+    background: url(./arrows/blackArrowLeft.png);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 25px;
+    width: 40px;
+}
+.prev:hover {  
+    background: url(./arrows/violetArrowLeft.png);
+    background-color: rgba(255, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    color: rgb(208, 18, 233);
+    opacity: 1;
+}
+.next{
+    background: url(./arrows/blackArrowRight.png);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 25px;
+    width: 40px;
+}
+.next:hover {  
+    background: url(./arrows/violetArrowRight.png);
+    background-color: rgba(255, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    color: rgb(208, 18, 233);
+    opacity: 1;
+}
+
+.prev {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}
+
+.gallery {
+    overflow: hidden;
+    z-index: 2;
+}
+
+.gallery ul {
+    width: 15000px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 150ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+    border-radius: 16px;
+    
+}
+div.gallery ul.images li img{
+    transition: all 500ms ease;
+    overflow: hidden;
+}
+div.gallery ul.images li img:hover{
+    filter: brightness(70%);
+    transition: all 500ms ease;
+}
